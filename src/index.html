@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云音乐商城 - 音乐购有趣</title>
+  <link rel="stylesheet" type="text/css" href="css/shop.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <script src="libs/requirejs/require.min.js" data-main="js/index"></script>
+</head>
+
+<body>
+  <!-- 轮播图 -->
+  <div class="shop_banner swiper-container">
+    <ul class="swiper-wrapper">
+    </ul>
+    <div class="swiper-pagination"></div>
+    <div class="shop_banner_change">
+      <a href="" class="swiper-button-prev"><i></i></a>
+      <a href="" class="swiper-button-next"><i></i></a>
+    </div>
+  </div>
+  <script type="text/html" id="slide-template">
+    {{each slides slide}}
+      <li class="swiper-slide"><img src="{{slide.picStr}}" alt=""></li>
+    {{/each}}
+  </script>
+  
+  <div class="shop_tab">
+    <div class="shop_tab_center">
+      <ul>
+        <li><a href=""><img src="shop_img/baopin.png" alt=""><span>热销爆品</span></a><em></em></li>
+        <li><a href=""><img src="shop_img/ip.png" alt=""><span>IP周边</span></a><em></em></li>
+        <li><a href=""><img src="shop_img/shuma.png" alt=""><span>数码影音</span></a><em></em></li>
+        <li><a href="">
+            <div class="yunbei_left"></div>
+            <div class="yunbei_right">
+              <div class="yunbei_mart">云贝商城</div>
+              <b>0</b>
+              <p>云贝</p>
+            </div>
+
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop_main">
+    <div class="shop_main_subj">
+      <div class="shop_main_subj_left">
+        <a href=""><img src="shop_img/109951164207184328.jpg" alt=""></a>
+      </div>
+      <div class="shop_main_subj_right">
+        <a href=""><img src="shop_img/109951163973446450.jpg" alt=""></a>
+      </div>
+
+    </div>
+    <div class="shop_main_list">
+      <p>编辑推荐</p>
+      <div class="shop_main_all">
+        <ul></ul>
+      </div>
+    </div>
+    <!-- 编辑推荐商品与所有商品共用的模板 -->
+    <script type="text/html" id="hot-template">
+      {{each products prod}}
+      <li>
+        <a href="/detail.html?id={{prod.id}}" class="obj_img">
+          <img src="{{prod.coverUrl}}" alt="">
+          {{if !prod.couponLabelDesc}}
+          <span class="obj_sale">
+            <span>¥{{prod.minPrice}}</span>
+            <span>¥{{prod.originalCost}}</span>
+          </span>
+          {{/if}}
+        </a>
+        <div class="obj_info">
+          <h3>
+            {{if prod.couponLabelDesc}}
+            <span><em>{{prod.couponLabelDesc}}</em></span>
+            {{else if prod.tags.length}}
+            <span><em>{{prod.tags[0]}}</em></span>
+            {{/if}}
+            <a href="/detail.html?id={{prod.id}}">{{prod.name}}</a>
+          </h3>
+          <p>¥{{prod.minPrice}}</p>
+        </div>
+      </li>
+      {{/each}}
+    </script>
+
+    <div class="shop_main_demo">
+      <div class="shop_main_left">
+        <span><i></i>数字专辑</span>
+        <p>毛不易、范丞丞数字专辑火热售卖中</p>
+        <a href="">立&nbsp;即&nbsp;购&nbsp;买&nbsp;&gt;</a>
+      </div>
+      <div class="shop_main_right">
+        <img src="shop_img/109951166089730540.jpg" alt="">
+        <img src="shop_img/109951166044914127.jpg" alt="">
+        <i></i>
+      </div>
+    </div>
+    <div class="shop_main_list">
+      <p>热门商品</p>
+      <div class="shop_main_all">
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<div class="shop_top">
+  <div class="shop_top_center">
+    <div class="shop_top_center_logo"><a href=""></a></div>
+    <div class="shop_top_center_search">
+      <form action="">
+        <input type="text" placeholder="漫步者">
+      </form>
+      <ul class="suggest">
+        
+      </ul>
+    </div>
+    <div class="shop_top_center_shopcart"><a href=""></a><span>0</span></div>
+    <div class="shop_top_center_user">
+      <div class="login">登录</div>
+    </div>
+  </div>
+</div>
+
+<script type="text/html" id="suggest-template">
+  {{each suggests s i}}
+  <li>{{s[i+1]}}</li>
+  {{/each}}
+</script>

@@ -1,0 +1,30 @@
+{
+  "name": "h52107-mall-163",
+  "version": "1.0.0",
+  "description": "> 技术栈及工具：HTML + CSS + JavaScript + jQuery + art-template + require.js + git + sass + gulp + ......",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:mobiletrain/h52107-mall-163.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "http-proxy-middleware": "^2.0.1",
+    "sass": "^1.39.2"
+  }
+}

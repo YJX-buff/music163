@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云音乐商城</title>
+  <link rel="stylesheet" type="text/css" href="css/object.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <script src="libs/requirejs/require.min.js" data-main="js/detail"></script>
+</head>
+
+<body>
+
+  <main></main>
+
+  <script type="text/html" id="detail-template">
+    <div class="object_main">
+      <div class="object_main_top">
+        <span><a href="">首页</a></span>
+        <span>
+          <i></i>{{detail.name}}
+        </span>
+        <span>分享</span>
+      </div>
+      <div class="object_main_contain">
+        <div class="object_main_contain_left">
+          <div class="left_box">
+            <img
+              src="{{detail.picUrls[0]}}"
+              alt=""
+              style="width: 100%; height: 100%;"
+              data-zoom-image="{{detail.picUrls[0]}}"
+            >
+          </div>
+          <!-- <div class="bigbox_hide">
+            <img src="object_img/z7QvWT_zZ3RuBI02e7-vMQ==_109951166366339668.png" alt="">
+          </div> -->
+          <div class="left_smnav">
+            <div id="zoom-gal">
+              {{each detail.picUrls pic}}
+                <a
+                  href="#"
+                  data-image="{{pic}}"
+                  data-zoom-image="{{pic}}"
+                ><img src="{{pic}}" alt="" style="width: 64px; height: 64px;"></a>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+        <div class="object_main_contain_right">
+          <h2>{{detail.name}}</h2>
+          <p>超萌可爱摆件，盲盒随机发</p>
+          <p class="price"><em>¥</em>{{99}}-{{519}}</p>
+          <div class="fl">
+            <span>促销: </span>
+            <ul>
+              <li><span>首发福利</span><span>70元&nbsp;&nbsp;70元优惠券,</span><span>无门槛</span><span><a
+                    href="">领券</a></span><span><a href="">全部优惠券(2) <i></i></a></span></li>
+            </ul>
+          </div>
+          <div class="style">
+            <div class="st_lf">款式 :</div>
+            <ul class="st_rg">
+              <li>
+                <b>手办盲盒</b>
+              </li>
+              <li>
+                <b>6只一套装</b>
+              </li>
+              <li>
+                <b>12只一盒装</b>
+              </li>
+            </ul>
+          </div>
+          <div class="num">
+            <p>数量 :</p>
+            <div class="num_op">
+              <a href=""><i></i></a>
+              <span><input type="text" value="1"></span>
+              <a href="" class="add"><i></i></a>
+            </div>
+          </div>
+          <div class="service">
+            <div class="ser_lf">服务 : </div>
+            <div class="ser_rg">
+              <a href="">不支持7天无理由退货</a>
+              <a href="">满119包邮</a>
+              <a href="">商家发货</a>
+              <a href="">网易自营</a>
+              <a href="">部分地区无法配送</a>
+            </div>
+          </div>
+          <div class="btn_buy">
+            <a href="">立即购买</a>
+            <a href=""><i></i>加入购物车</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+</body>
+
+</html>
