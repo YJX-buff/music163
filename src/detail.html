@@ -27,32 +27,25 @@
       <div class="object_main_contain">
         <div class="object_main_contain_left">
           <div class="left_box">
-            <img
-              src="{{detail.picUrls[0]}}"
-              alt=""
-              style="width: 100%; height: 100%;"
-              data-zoom-image="{{detail.picUrls[0]}}"
-            >
+            <img src="{{detail.picUrls[0]}}" alt="" style="width: 100%; height: 100%;"
+              data-zoom-image="{{detail.picUrls[0]}}">
           </div>
           <!-- <div class="bigbox_hide">
-            <img src="object_img/z7QvWT_zZ3RuBI02e7-vMQ==_109951166366339668.png" alt="">
+            <img src="img/object_img/z7QvWT_zZ3RuBI02e7-vMQ==_109951166366339668.png" alt="">
           </div> -->
           <div class="left_smnav">
             <div id="zoom-gal">
               {{each detail.picUrls pic}}
-                <a
-                  href="#"
-                  data-image="{{pic}}"
-                  data-zoom-image="{{pic}}"
-                ><img src="{{pic}}" alt="" style="width: 64px; height: 64px;"></a>
+              <a href="#" data-image="{{pic}}" data-zoom-image="{{pic}}"><img src="{{pic}}" alt=""
+                  style="width: 64px; height: 64px;"></a>
               {{/each}}
             </div>
           </div>
         </div>
         <div class="object_main_contain_right">
           <h2>{{detail.name}}</h2>
-          <p>超萌可爱摆件，盲盒随机发</p>
-          <p class="price"><em>¥</em>{{99}}-{{519}}</p>
+          <p>{{detail.suggestWord}}</p>
+          <p class="price"><em>¥</em>{{detail.minPrice}}</p>
           <div class="fl">
             <span>促销: </span>
             <ul>

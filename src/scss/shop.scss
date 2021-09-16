@@ -29,7 +29,7 @@ button {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background: url(../shop_img/modules.png) no-repeat 0px -48px;
+  background: url(../img/shop_img/modules.png) no-repeat 0px -48px;
 
 }
 
@@ -44,7 +44,7 @@ button {
   width: 100%;
   height: 38px;
   margin-top: 16px;
-  background: url(../shop_img/modules.png)no-repeat 0px -0px;
+  background: url(../img/shop_img/modules.png)no-repeat 0px -0px;
 }
 
 .shop_top .shop_top_center .shop_top_center_search form input {
@@ -56,6 +56,43 @@ button {
   outline: none;
   padding: 0;
   background: transparent;
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest {
+  position: absolute;
+  z-index: 999;
+  top: 56px;
+  width: 300px;
+  height: auto;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 4px 7px #555;
+  text-shadow: 0 1px 0 rgb(255 255 255 / 90%);
+  padding-bottom: 10px;
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest li {
+  height: 34px;
+  line-height: 34px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest li:nth-child(1) {
+  border-bottom: 1px solid #E5E5E5;
+  font-weight: 600;
+  font-size: 12px;
+  color: #000;
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest li:hover {
+  background-color: #F5F5F5;
+
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest li:nth-child(1):hover {
+  background-color: #fff;
 }
 
 .shop_top .shop_top_center .shop_top_center_shopcart {
@@ -71,7 +108,7 @@ button {
   width: 36px;
   height: 36px;
   cursor: pointer;
-  background: url(../shop_img/modules.png)no-repeat -110px -158px;
+  background: url(../img/shop_img/modules.png)no-repeat -110px -158px;
 }
 
 .shop_top .shop_top_center .shop_top_center_shopcart span {
@@ -83,14 +120,14 @@ button {
   line-height: 18px;
   text-align: center;
   color: #fff;
-  background: url(../shop_img/modules.png)no-repeat -156px -158px;
+  background: url(../img/shop_img/modules.png)no-repeat -156px -158px;
 }
 
 .shop_top .shop_top_center .shop_top_center_user {
   width: 62px;
   height: 36px;
   margin: 15px 0 0 37px;
-  background: url(../shop_img/arrow-d.png) no-repeat 110% center;
+  background: url(../img/shop_img/arrow-d.png) no-repeat 110% center;
   float: left;
 }
 
@@ -111,42 +148,42 @@ button {
   position: relative;
 }
 
-.shop_banner .shop_banner_list li {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.shop_banner .shop_banner_list li:nth-child(1) {
-  background: url(../shop_img/banner_bg_1.jpg)repeat-x;
+// .shop_banner li {
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+// }
+/*
+.shop_banner li:nth-child(1) {
+  background: url(../img/shop_img/banner_bg_1.jpg)repeat-x;
   background-size: cover;
 }
 
-.shop_banner .shop_banner_list li:nth-child(2) {
-  background: url(../shop_img/banner_bg_2.jpg)repeat-x;
+.shop_banner li:nth-child(2) {
+  background: url(../img/shop_img/banner_bg_2.jpg)repeat-x;
   background-size: cover;
 }
 
-.shop_banner .shop_banner_list li:nth-child(3) {
-  background: url(../shop_img/banner_bg_3.jpg)repeat-x;
+.shop_banner li:nth-child(3) {
+  background: url(../img/shop_img/banner_bg_3.jpg)repeat-x;
   background-size: cover;
 }
 
-.shop_banner .shop_banner_list li:nth-child(4) {
-  background: url(../shop_img/banner_bg_4.jpg)repeat-x;
+.shop_banner li:nth-child(4) {
+  background: url(../img/shop_img/banner_bg_4.jpg)repeat-x;
   background-size: cover;
 }
 
-.shop_banner .shop_banner_list li:nth-child(5) {
-  background: url(../shop_img/banner_bg_5.jpg)repeat-x;
+.shop_banner li:nth-child(5) {
+  background: url(../img/shop_img/banner_bg_5.jpg)repeat-x;
   background-size: cover;
 }
 
-.shop_banner .shop_banner_list li:nth-child(6) {
-  background: url(../shop_img/banner_bg_6.jpg)repeat-x;
+.shop_banner li:nth-child(6) {
+  background: url(../img/shop_img/banner_bg_6.jpg)repeat-x;
   background-size: cover;
 }
-
+*/
 .shop_banner .shop_banner_list li a {
   display: block;
   width: 1100px;
@@ -172,13 +209,13 @@ button {
   width: 6px;
   height: 6px;
   margin: 0 3px;
-  background: url(../shop_img/dot.png) no-repeat;
+  background: url(../img/shop_img/dot.png) no-repeat;
   cursor: pointer;
 }
 
-.shop_banner .shop_banner_change {
-  position: relative;
-}
+// .shop_banner .shop_banner_change {
+//   position: relative;
+// }
 
 .shop_banner .shop_banner_change a {
   position: absolute;
@@ -189,15 +226,15 @@ button {
   display: block;
   background-color: #000;
   filter: alpha(opacity=10);
-  -moz-opacity: 0.5;
-  opacity: 0.5;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
 }
 
 .shop_banner .shop_banner_change a i {
   width: 100%;
   height: 100%;
   display: block;
-  background: url(../shop_img/pointlist.png)no-repeat;
+  background: url(../img/shop_img/pointlist.png)no-repeat;
 }
 
 .shop_banner .shop_banner_change a:nth-child(1) {
@@ -267,7 +304,7 @@ button {
   width: 48px;
   height: 48px;
   margin-top: 15px;
-  background: url(../shop_img/jifen.png)no-repeat;
+  background: url(../img/shop_img/jifen.png)no-repeat;
 }
 
 .shop_tab .shop_tab_center ul li:last-child .yunbei_right {
@@ -356,6 +393,12 @@ button {
   height: auto;
 }
 
+// .shop_main_list .shop_main_all ul {
+// display: flex;
+// justify-content: space-between;
+// flex-wrap: wrap;
+// }
+
 .shop_main_list .shop_main_all ul li {
   float: left;
   position: relative;
@@ -364,10 +407,14 @@ button {
   margin-right: 16px;
 }
 
-.shop_main_list .shop_main_all ul li:nth-child(4),
-.shop_main_list .shop_main_all ul li:nth-child(8) {
+.shop_main_list .shop_main_all ul li:nth-child(4n) {
   margin-right: 0;
 }
+
+// .shop_main_list .shop_main_all ul li:nth-child(4),
+// .shop_main_list .shop_main_all ul li:nth-child(8) {
+//   margin-right: 0;
+// }
 
 .shop_main_list .shop_main_all ul li .obj_img {
   display: inline-block;
@@ -490,7 +537,7 @@ button {
   margin-top: 5px;
   width: 32px;
   height: 32px;
-  background: url(../shop_img/digitalicon.png) no-repeat;
+  background: url(../img/shop_img/digitalicon.png) no-repeat;
 }
 
 .shop_main_demo .shop_main_left p {
@@ -539,7 +586,7 @@ button {
   width: 35px;
   height: 120px;
   border: none;
-  background: url(../shop_img/pointlist.png)no-repeat 0px -73px;
+  background: url(../img/shop_img/pointlist.png)no-repeat 0px -73px;
 }
 
 .shop_footer {
@@ -591,7 +638,7 @@ button {
   width: 60px;
   height: 70px;
   margin-left: 30px;
-  background: url(../shop_img/foot_enter.png) no-repeat;
+  background: url(../img/shop_img/foot_enter.png) no-repeat;
 }
 
 .shop_footer .shop_footer_right li:nth-child(1) {

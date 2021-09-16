@@ -31,17 +31,21 @@ const paths = {
     src: 'src/libs/**/*.*',
     dest: 'dist/libs'
   },
-  objectImg: {
-    src: 'src/object_img/**/*.*',
-    dest: 'dist/object_img'
-  },
-  shopImg: {
-    src: 'src/shop_img/**/*.*',
-    dest: 'dist/shop_img'
-  },
-  shopcartImg: {
-    src: 'src/shopcart_img/**/*.*',
-    dest: 'dist/shopcart_img'
+  // objectImg: {
+  //   src: 'src/object_img/**/*.*',
+  //   dest: 'dist/object_img'
+  // },
+  // shopImg: {
+  //   src: 'src/shop_img/**/*.*',
+  //   dest: 'dist/shop_img'
+  // },
+  // shopcartImg: {
+  //   src: 'src/shopcart_img/**/*.*',
+  //   dest: 'dist/shopcart_img'
+  // },
+  img: {
+    src: 'src/img/**/*.*',
+    dest: 'dist/img'
   },
   mock: {
     src: 'src/mock/**/*.*',
@@ -50,18 +54,18 @@ const paths = {
 }
 
 // 定义任务函数：处理 JS 资源
-function scripts() {
+function scripts () {
   return gulp.src(paths.js.src)
     .pipe(babel({
-			presets: ['env']
-		}))
+      presets: ['env']
+    }))
     .pipe(uglify())
     .pipe(gulp.dest(paths.js.dest))
     .pipe(connect.reload())
 }
 
 // 处理 CSS
-function styles() {
+function styles () {
   return gulp.src(paths.css.src)
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.css.dest))
@@ -69,7 +73,7 @@ function styles() {
 }
 
 // 编译 sass 文件
-function buildScss() {
+function buildScss () {
   return gulp.src(paths.scss.src)
     .pipe(sass())
     // .pipe(sass({outputStyle: 'compressed'}))
@@ -78,7 +82,7 @@ function buildScss() {
 }
 
 // html文件处理
-function html() {
+function html () {
   return gulp.src(paths.html.src)
     .pipe(htmlmin({ collapseWhitespace: true, minifyCSS: true, minifyJS: true }))
     .pipe(gulp.dest(paths.html.dest))
@@ -86,7 +90,7 @@ function html() {
 }
 
 // 定义监视任务
-function watch() {
+function watch () {
   gulp.watch(paths.scss.src, buildScss)
   gulp.watch(paths.js.src, scripts)
   gulp.watch(paths.css.src, styles)
@@ -94,34 +98,38 @@ function watch() {
 }
 
 // 清理 dist 目录
-function clean() {
-  return del([ 'dist' ])
+function clean () {
+  return del(['dist'])
 }
 
 // 复制无需特殊处理的资源
-function copyLibs() {
+function copyLibs () {
   return gulp.src(paths.libs.src)
     .pipe(gulp.dest(paths.libs.dest))
 }
-function copyMock() {
+function copyMock () {
   return gulp.src(paths.mock.src)
     .pipe(gulp.dest(paths.mock.dest))
 }
-function copyObjectImg() {
-  return gulp.src(paths.objectImg.src)
-    .pipe(gulp.dest(paths.objectImg.dest))
-}
-function copyShopImg() {
-  return gulp.src(paths.shopImg.src)
-    .pipe(gulp.dest(paths.shopImg.dest))
-}
-function copyShopcartImg() {
-  return gulp.src(paths.shopcartImg.src)
-    .pipe(gulp.dest(paths.shopcartImg.dest))
+// function copyObjectImg() {
+//   return gulp.src(paths.objectImg.src)
+//     .pipe(gulp.dest(paths.objectImg.dest))
+// }
+// function copyShopImg() {
+//   return gulp.src(paths.shopImg.src)
+//     .pipe(gulp.dest(paths.shopImg.dest))
+// }
+// function copyShopcartImg() {
+//   return gulp.src(paths.shopcartImg.src)
+//     .pipe(gulp.dest(paths.shopcartImg.dest))
+// }
+function copyImg () {
+  return gulp.src(paths.img.src)
+    .pipe(gulp.dest(paths.img.dest))
 }
 
 // 启动 webserver 服务器
-function server() {
+function server () {
   connect.server({
     root: 'dist',
     port: 9527,
@@ -157,9 +165,9 @@ const build = gulp.series(
     html,
     copyLibs,
     copyMock,
-    copyObjectImg,
-    copyShopImg,
-    copyShopcartImg
+    copyImg,
+    // copyShopImg,
+    // copyShopcartImg
   ),
   gulp.parallel(
     server,

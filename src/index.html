@@ -25,16 +25,18 @@
   </div>
   <script type="text/html" id="slide-template">
     {{each slides slide}}
-      <li class="swiper-slide"><img src="{{slide.picStr}}" alt=""></li>
+    <li class="swiper-slide"
+      style="display: flex; justify-content: center;background: url({{slide.backendPicStr}}); background-size: cover">
+      <img src="{{slide.picStr}}" alt=""></li>
     {{/each}}
   </script>
-  
+
   <div class="shop_tab">
     <div class="shop_tab_center">
       <ul>
-        <li><a href=""><img src="shop_img/baopin.png" alt=""><span>热销爆品</span></a><em></em></li>
-        <li><a href=""><img src="shop_img/ip.png" alt=""><span>IP周边</span></a><em></em></li>
-        <li><a href=""><img src="shop_img/shuma.png" alt=""><span>数码影音</span></a><em></em></li>
+        <li><a href=""><img src="img/shop_img/baopin.png" alt=""><span>热销爆品</span></a><em></em></li>
+        <li><a href=""><img src="img/shop_img/ip.png" alt=""><span>IP周边</span></a><em></em></li>
+        <li><a href=""><img src="img/shop_img/shuma.png" alt=""><span>数码影音</span></a><em></em></li>
         <li><a href="">
             <div class="yunbei_left"></div>
             <div class="yunbei_right">
@@ -51,10 +53,10 @@
   <div class="shop_main">
     <div class="shop_main_subj">
       <div class="shop_main_subj_left">
-        <a href=""><img src="shop_img/109951164207184328.jpg" alt=""></a>
+        <a href=""><img src="img/shop_img/109951164207184328.jpg" alt=""></a>
       </div>
       <div class="shop_main_subj_right">
-        <a href=""><img src="shop_img/109951163973446450.jpg" alt=""></a>
+        <a href=""><img src="img/shop_img/109951163973446450.jpg" alt=""></a>
       </div>
 
     </div>
@@ -99,8 +101,8 @@
         <a href="">立&nbsp;即&nbsp;购&nbsp;买&nbsp;&gt;</a>
       </div>
       <div class="shop_main_right">
-        <img src="shop_img/109951166089730540.jpg" alt="">
-        <img src="shop_img/109951166044914127.jpg" alt="">
+        <img src="img/shop_img/109951166089730540.jpg" alt="">
+        <img src="img/shop_img/109951166044914127.jpg" alt="">
         <i></i>
       </div>
     </div>

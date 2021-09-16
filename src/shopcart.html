@@ -8,86 +8,48 @@
   <title>购物车</title>
   <link rel="stylesheet" href="css/shopcart.css">
   <link rel="stylesheet" href="css/base.css">
-
+  <script src="libs/requirejs/require.min.js" data-main="js/index"></script>
 </head>
 
 <body>
-  <div class="shop_top">
-    <div class="shop_top_center">
-      <div class="shop_top_center_logo"><a href=""></a></div>
-      <div class="shop_top_center_search">
-        <form action="">
-          <input type="text" placeholder="漫步者">
-        </form>
+  <div class="cart_main">
+    <div class="main_top">购物车</div>
+    <div class="cart_topnav">
+      <div class="cart_nav_check">
+        <i></i>
       </div>
-      <div class="shop_top_center_shopcart"><a href=""></a><span>0</span></div>
-      <div class="shop_top_center_user">
-        <div class="login">登录</div>
-      </div>
+      <div class="cart_nav_all">全选</div>
+      <div class="cart_nav_list">商品</div>
+      <div class="cart_nav_price">金额</div>
+      <div class="cart_nav_num">数量</div>
+      <div class="cart_nav_count">小计</div>
+      <div class="cart_nav_option">操作</div>
     </div>
-    <div class="shop_top_border"></div>
-
-    <div class="cart_main">
-      <div class="main_top">购物车</div>
-      <div class="cart_topnav">
-        <div class="cart_nav_check">
-          <i></i>
+    <ul class="prod_list">
+      <li class="first_line"></li>
+      <li>
+        <div class="check"><i></i></div>
+        <div class="cnt">
+          <div class="coverwrap"><a href=""><img src="img/object_img/109951166366330465.jpg" alt=""></a></div>
+          <div class="msg"><a href="">
+              <p>i12真无线蓝牙耳机 智能触控 双耳运动跑步 安卓苹果通用</p>
+              <p>白色</p>
+            </a></div>
+          <div class="price"><i>¥49</i></div>
+          <div class="ctrl">
+            <a href=""><i></i></a>
+            <span><input type="text" value="1"></span>
+            <a href="" class="add"><i></i></a>
+          </div>
+          <div class="acount"><i>¥49</i></div>
+          <div class="del"></div>
         </div>
-        <div class="cart_nav_all">全选</div>
-        <div class="cart_nav_list">商品</div>
-        <div class="cart_nav_price">金额</div>
-        <div class="cart_nav_num">数量</div>
-        <div class="cart_nav_count">小计</div>
-        <div class="cart_nav_option">操作</div>
-      </div>
-      <ul class="prod_list">
-        <li class="first_line"></li>
-        <li class="last_line"></li>
-      </ul>
-    </div>
-
-    <div class="shop_footer">
-      <div class="shop_footer_center">
-        <div class="shop_footer_left">
-          <p>
-            <a href="">服务条款</a><span class="line">|</span>
-            <a href="">隐私政策</a><span class="line">|</span>
-            <a href="">儿童隐私政策</a><span class="line">|</span>
-            <a href="">版权投诉指引</a><span class="line">|</span>
-            <a href="">意见反馈</a>
-          </p>
-          <p>
-            <span>网易公司版权所有©1997-2021</span>
-            <span>杭州乐读科技有限公司运营：</span>
-            <span>浙网文[2021] 1186-054号</span>
-          </p>
-          <p>
-            <span>违法和不良信息举报电话：0571-89853516</span>
-            <span>举报邮箱：</span>
-            <span>ncm5990@163.com</span>
-          </p>
-          <p>
-            <span>食品经营许可证</span>
-            <span>出版物经营许可证</span>
-            <span>营业执照</span>
-            <span>网络食品交易第三方平台提供者信息备案: 浙网食A33010041</span>
-            <span>进口冷链管理承诺书</span>
-          </p>
-          <p>
-            <span>粤B2-20090191-18</span>
-            <span>举报邮箱：</span>
-            <span>工业和信息化部备案管理系统网站</span>
-          </p>
-        </div>
-        <ul class="shop_footer_right">
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </div>
-    </div>
+      </li>
+      <li class="last_line"></li>
+    </ul>
   </div>
+
+
 </body>
 
 </html>

@@ -32,7 +32,7 @@ body {
   width: 177px;
   height: 100%;
   float: left;
-  background: url(../index_img/topbar.png) no-repeat;
+  background: url(../img/index_img/topbar.png) no-repeat;
   padding-right: 20px;
 }
 
@@ -107,7 +107,7 @@ body {
 #app .app_top .app_top_nav .app_top_nav_center .app_top_login .search .con {
   width: 100%;
   height: 100%;
-  background: url(../index_img/topbar.png) no-repeat 0px -99px;
+  background: url(../img/index_img/topbar.png) no-repeat 0px -99px;
 }
 
 #app .app_top .app_top_nav .app_top_nav_center .app_top_login .search .sch {
@@ -130,7 +130,7 @@ body {
 
 #app .app_top .app_top_nav .app_top_nav_center ul li:last-child::after {
   content: '';
-  background: url(../index_img/topbar.png) no-repeat -192px 0px;
+  background: url(../img/index_img/topbar.png) no-repeat -192px 0px;
   width: 26px;
   height: 13px;
   position: absolute;
@@ -177,7 +177,7 @@ body {
 
 #app .app_top .app_top_red ul li:first-child span::after {
   content: '';
-  background: url(../index_img/topbar.png) no-repeat -226px 0px;
+  background: url(../img/index_img/topbar.png) no-repeat -226px 0px;
   width: 12px;
   height: 7px;
   position: absolute;
@@ -240,7 +240,7 @@ body {
   right: 0;
   width: 252px;
   height: 100%;
-  background: url(../index_img/download.png) no-repeat;
+  background: url(../img/index_img/download.png) no-repeat;
 }
 
 #app .app_banner .app_banner_center .app_download a {
@@ -248,11 +248,11 @@ body {
   width: 215px;
   height: 56px;
   margin: 186px 0 0 19px;
-  background: url(../index_img/download.png) no-repeat -19px -185px;
+  background: url(../img/index_img/download.png) no-repeat -19px -185px;
 }
 
 #app .app_banner .app_banner_center .app_download a:hover {
-  background: url(../index_img/download.png) no-repeat 0px -289px;
+  background: url(../img/index_img/download.png) no-repeat 0px -289px;
 }
 
 #app .app_banner .app_banner_center .app_download p {
@@ -269,7 +269,7 @@ body {
   left: -20px;
   width: 20px;
   height: 285px;
-  background: url(../index_img/banner.png) no-repeat -1px 0;
+  background: url(../img/index_img/banner.png) no-repeat -1px 0;
 }
 
 #app .app_banner .app_banner_center .app_download .shadowr {
@@ -279,7 +279,7 @@ body {
   right: -20px;
   width: 20px;
   height: 285px;
-  background: url(../index_img/banner.png) no-repeat -20px 0;
+  background: url(../img/index_img/banner.png) no-repeat -20px 0;
 }
 
 #app .app_banner .app_banner_center .app_banner_list {
@@ -295,13 +295,13 @@ body {
 #app .app_banner .app_banner_center .app_banner_list li {
   width: 20px;
   height: 20px;
-  background: url(../index_img/banner.png)no-repeat 3px -343px;
+  background: url(../img/index_img/banner.png)no-repeat 3px -343px;
   text-align: center;
   margin-left: 3px;
 }
 
 #app .app_banner .app_banner_center .app_banner_list li:hover {
-  background: url(../index_img/banner.png)no-repeat -16px -343px;
+  background: url(../img/index_img/banner.png)no-repeat -16px -343px;
 }
 
 
@@ -318,11 +318,11 @@ body {
   left: -68px;
   top: 50%;
   margin-top: -31px;
-  background: url(../index_img/banner.png) 0 -360px;
+  background: url(../img/index_img/banner.png) 0 -360px;
 }
 
 #app .app_banner .app_banner_center .app_banner_lt:hover {
-  background: url(../index_img/banner.png) 0 -430px;
+  background: url(../img/index_img/banner.png) 0 -430px;
 }
 
 #app .app_banner .app_banner_center .app_banner_gt {
@@ -332,11 +332,11 @@ body {
   right: -68px;
   top: 50%;
   margin-top: -31px;
-  background: url(../index_img/banner.png) 0 -508px;
+  background: url(../img/index_img/banner.png) 0 -508px;
 }
 
 #app .app_banner .app_banner_center .app_banner_gt:hover {
-  background: url(../index_img/banner.png) 0 -578px;
+  background: url(../img/index_img/banner.png) 0 -578px;
 }
 
 #app .app_play_bottom {
@@ -353,7 +353,7 @@ body {
   height: 53px;
   margin: 0 auto;
   left: 52px;
-  background: url(../index_img/playbar.png) repeat-x 0 0;
+  background: url(../img/index_img/playbar.png) repeat-x 0 0;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play {
@@ -370,7 +370,7 @@ body {
   width: 52px;
   /* z-index: 9; */
   height: 67px;
-  background: url(../index_img/playbar.png) repeat-x 0 0;
+  background: url(../img/index_img/playbar.png) repeat-x 0 0;
 }
 
 #app .app_play_bottom .app_play_bottom_left {
@@ -380,7 +380,7 @@ body {
   width: 52px;
   /* z-index: 9; */
   height: 67px;
-  background: url(../index_img/playbar.png) repeat-x 0 -380px;
+  background: url(../img/index_img/playbar.png) repeat-x 0 -380px;
 }
 
 #app .app_play_bottom .app_play_bottom_left .lock {
@@ -388,11 +388,11 @@ body {
   width: 18px;
   height: 18px;
   margin: 6px 0 0 17px;
-  background: url(../index_img/playbar.png) no-repeat -100px -380px;
+  background: url(../img/index_img/playbar.png) no-repeat -100px -380px;
 }
 
 #app .app_play_bottom .app_play_bottom_left .lock:hover {
-  background: url(../index_img/playbar.png) no-repeat -100px -400px;
+  background: url(../img/index_img/playbar.png) no-repeat -100px -400px;
 }
 
 #app .app_play_bottom .app_play_bottom_right {
@@ -402,7 +402,7 @@ body {
   width: 15px;
   /* z-index: 9; */
   height: 67px;
-  background: url(../index_img/playbar.png) repeat-x 0 0;
+  background: url(../img/index_img/playbar.png) repeat-x 0 0;
 }
 
 #app .app_play_bottom .app_play_bottom_hand {
@@ -427,7 +427,7 @@ body {
   height: 28px;
   margin-right: 8px;
   margin-top: 5px;
-  background: url(../index_img/playbar.png) no-repeat 0 -130px;
+  background: url(../img/index_img/playbar.png) no-repeat 0 -130px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .btn_items .pause {
@@ -436,7 +436,7 @@ body {
   width: 36px;
   height: 36px;
   margin-right: 8px;
-  background: url(../index_img/playbar.png) no-repeat 0 -204px;
+  background: url(../img/index_img/playbar.png) no-repeat 0 -204px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .btn_items .next {
@@ -446,7 +446,7 @@ body {
   height: 28px;
   margin-right: 8px;
   margin-top: 5px;
-  background: url(../index_img/playbar.png) no-repeat -80px -130px;
+  background: url(../img/index_img/playbar.png) no-repeat -80px -130px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .music_img {
@@ -472,7 +472,7 @@ body {
   left: 0px;
   width: 34px;
   height: 35px;
-  background: url(../index_img/playbar.png) no-repeat 0 -80px;
+  background: url(../img/index_img/playbar.png) no-repeat 0 -80px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .play {
@@ -493,7 +493,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 11px 2px 0 0;
-  background: url(../index_img/pip.jpg)no-repeat 0 0;
+  background: url(../img/index_img/pip.jpg)no-repeat 0 0;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .option .option_add {
@@ -501,7 +501,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 11px 2px 0 0;
-  background: url(../index_img/playbar.png)no-repeat -88px -163px;
+  background: url(../img/index_img/playbar.png)no-repeat -88px -163px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .option .option_share {
@@ -509,7 +509,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 11px 2px 0 0;
-  background: url(../index_img/playbar.png)no-repeat -114px -163px;
+  background: url(../img/index_img/playbar.png)no-repeat -114px -163px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .ctrl {
@@ -517,7 +517,7 @@ body {
   width: 126px;
   height: 100%;
   padding-left: 13px;
-  background: url(../index_img/playbar.png)no-repeat -147px -238px;
+  background: url(../img/index_img/playbar.png)no-repeat -147px -238px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .ctrl .play_sound {
@@ -525,7 +525,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 11px 2px 0 0;
-  background: url(../index_img/playbar.png)no-repeat -2px -248px;
+  background: url(../img/index_img/playbar.png)no-repeat -2px -248px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .ctrl .play_order {
@@ -533,7 +533,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 11px 2px 0 0;
-  background: url(../index_img/playbar.png)no-repeat -3px -344px;
+  background: url(../img/index_img/playbar.png)no-repeat -3px -344px;
 }
 
 #app .app_play_bottom .app_play_bottom_center .app_play .ctrl .play_list {
@@ -541,7 +541,7 @@ body {
   width: 38px;
   height: 25px;
   margin: 11px 0 0 0;
-  background: url(../index_img/playbar.png)no-repeat -42px -68px;
+  background: url(../img/index_img/playbar.png)no-repeat -42px -68px;
   padding-left: 21px;
   line-height: 27px;
   text-align: center;
@@ -559,7 +559,7 @@ body {
   border-color: rgb(211, 211, 211);
   border-image: initial;
   border-width: 0px 1px;
-  background: url(../index_img/wrap1.png) repeat-y;
+  background: url(../img/index_img/wrap1.png) repeat-y;
   overflow: hidden;
 }
 
@@ -574,7 +574,7 @@ body {
   height: 35px;
   padding: 0 10px 0 34px;
   border-bottom: 2px solid #C10D0C;
-  background: url(../index_img/index.png) no-repeat -225px -156px;
+  background: url(../img/index_img/index.png) no-repeat -225px -156px;
   overflow: hidden;
 }
 
@@ -609,7 +609,7 @@ body {
   vertical-align: middle;
   width: 12px;
   height: 12px;
-  background: url(../index_img/index.png) no-repeat 0 -240px;
+  background: url(../img/index_img/index.png) no-repeat 0 -240px;
 }
 
 #app .app_main .app_main_left .app_left_new {
@@ -618,7 +618,7 @@ body {
   padding: 0 10px 0 34px;
   margin-top: 35px;
   border-bottom: 2px solid #C10D0C;
-  background: url(../index_img/index.png) no-repeat -225px -156px;
+  background: url(../img/index_img/index.png) no-repeat -225px -156px;
   overflow: hidden;
 }
 
@@ -642,7 +642,7 @@ body {
   vertical-align: middle;
   width: 12px;
   height: 12px;
-  background: url(../index_img/index.png) no-repeat 0 -240px;
+  background: url(../img/index_img/index.png) no-repeat 0 -240px;
 }
 
 #app .app_main .app_main_left .app_left_bang {
@@ -651,7 +651,7 @@ body {
   padding: 0 10px 0 34px;
   margin-top: 35px;
   border-bottom: 2px solid #C10D0C;
-  background: url(../index_img/index.png) no-repeat -225px -156px;
+  background: url(../img/index_img/index.png) no-repeat -225px -156px;
   overflow: hidden;
 }
 
@@ -675,7 +675,7 @@ body {
   vertical-align: middle;
   width: 12px;
   height: 12px;
-  background: url(../index_img/index.png) no-repeat 0 -240px;
+  background: url(../img/index_img/index.png) no-repeat 0 -240px;
 }
 
 #app .app_main .app_main_left .hot_music_menu {
@@ -703,7 +703,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: url(../index_img/coverall.png)no-repeat 0 0;
+  background: url(../img/index_img/coverall.png)no-repeat 0 0;
 }
 
 #app .app_main .app_main_left .hot_music_menu dl dt .num {
@@ -711,14 +711,14 @@ body {
   bottom: 0;
   width: 100%;
   height: 27px;
-  background: url(../index_img/coverall.png)no-repeat 0 -537px;
+  background: url(../img/index_img/coverall.png)no-repeat 0 -537px;
 }
 
 #app .app_main .app_main_left .hot_music_menu dl dt .num span:nth-child(1) {
   float: left;
   width: 14px;
   height: 11px;
-  background: url(../index_img/iconall.png)no-repeat 0 -24px;
+  background: url(../img/index_img/iconall.png)no-repeat 0 -24px;
   margin: 9px 5px 9px 10px;
 }
 
@@ -735,7 +735,7 @@ body {
   margin-right: 10px;
   width: 16px;
   height: 17px;
-  background: url(../index_img/iconall.png)no-repeat 0 0;
+  background: url(../img/index_img/iconall.png)no-repeat 0 0;
   cursor: pointer;
 }
 
@@ -750,7 +750,7 @@ body {
 
 #app .app_main .app_main_left .hot_music_menu dl dd i {
   float: left;
-  background: url(../index_img/icon.png)no-repeat -31px -658px;
+  background: url(../img/index_img/icon.png)no-repeat -31px -658px;
   width: 35px;
   height: 15px;
   margin-top: 1px;
@@ -778,7 +778,7 @@ body {
   left: 4px;
   width: 17px;
   height: 17px;
-  background: url(../index_img/index.png)no-repeat -260px -75px;
+  background: url(../img/index_img/index.png)no-repeat -260px -75px;
 }
 
 .new_music_disk .inner .gt {
@@ -786,7 +786,7 @@ body {
   top: 71px;
   width: 17px;
   height: 17px;
-  background: url(../index_img/index.png)no-repeat -300px -75px;
+  background: url(../img/index_img/index.png)no-repeat -300px -75px;
 }
 
 .new_music_disk .inner .roll {
@@ -810,7 +810,7 @@ body {
   width: 118px;
   height: 150px;
   margin-left: 11px;
-  background: url(../index_img/index.png)no-repeat -260px 100px;
+  background: url(../img/index_img/index.png)no-repeat -260px 100px;
   position: relative;
 }
 
@@ -825,7 +825,7 @@ body {
   display: inline-block;
   width: 118px;
   height: 100px;
-  background: url(../index_img/coverall.png)no-repeat 0 -570px;
+  background: url(../img/index_img/coverall.png)no-repeat 0 -570px;
 }
 
 .new_music_disk .inner .roll .roll_ul li p {
@@ -846,7 +846,7 @@ body {
   height: 472px;
   margin-top: 20px;
   padding-left: 1px;
-  background: url(../index_img/index_bill.png)no-repeat 0 0;
+  background: url(../img/index_img/index_bill.png)no-repeat 0 0;
 }
 
 #app .app_main .app_main_left .bang_list .high,
@@ -894,7 +894,7 @@ body {
   width: 22px;
   height: 22px;
   margin-right: 10px;
-  background: url(../index_img/index.png) no-repeat -267px -205px;
+  background: url(../img/index_img/index.png) no-repeat -267px -205px;
 }
 
 #app .app_main .app_main_left .bang_list dl dt .dt_rg .btn a:nth-child(2) {
@@ -903,7 +903,7 @@ body {
   width: 22px;
   height: 22px;
   margin-right: 10px;
-  background: url(../index_img/index.png) no-repeat -300px -205px;
+  background: url(../img/index_img/index.png) no-repeat -300px -205px;
 }
 
 #app .app_main .app_main_left .bang_list dl dd ul {
@@ -955,7 +955,7 @@ body {
 
 #app .app_main .app_main_right .login_info {
   height: 126px;
-  background: url(../index_img/index.png) no-repeat 0 0;
+  background: url(../img/index_img/index.png) no-repeat 0 0;
 }
 
 #app .app_main .app_main_right .login_info p {
@@ -975,7 +975,7 @@ body {
   text-align: center;
   color: #fff;
   text-shadow: 0 1px 0 #8a060b;
-  background: url(../index_img/index.png) no-repeat 0 -195px;
+  background: url(../img/index_img/index.png) no-repeat 0 -195px;
 }
 
 #app .app_main .app_main_right .singer {
@@ -1063,11 +1063,11 @@ body {
   vertical-align: top;
   text-align: center;
   cursor: pointer;
-  background: url(../index_img/button2.png) no-repeat right -100px;
+  background: url(../img/index_img/button2.png) no-repeat right -100px;
 }
 
 #app .app_main .app_main_right .singer .join a {
-  background: url(../index_img/button2.png) no-repeat 0 -59px;
+  background: url(../img/index_img/button2.png) no-repeat 0 -59px;
   display: inline-block;
   padding: 0 15px 0 20px;
   width: 170px;
@@ -1163,7 +1163,7 @@ body {
   display: inline-block;
   margin-right: 2px;
   vertical-align: -2px;
-  background: url(../index_img/police.png)no-repeat;
+  background: url(../img/index_img/police.png)no-repeat;
   background-size: cover;
 }
 
@@ -1182,7 +1182,7 @@ body {
   width: 50px;
   height: 45px;
   margin: 0 5px 0 35px;
-  background: url(../index_img/foot_enter_new.png)no-repeat;
+  background: url(../img/index_img/foot_enter_new.png)no-repeat;
   background-size: 110px 552px;
 }
 
@@ -1212,7 +1212,7 @@ body {
   width: 50px;
   height: 18px;
   margin: 5px 5px 0 35px;
-  background: url(../index_img/foot_enter_tt.png)no-repeat;
+  background: url(../img/index_img/foot_enter_tt.png)no-repeat;
   background-size: 180px 139px;
 }
 
@@ -1279,7 +1279,7 @@ body {
   width: 10px;
   height: 10px;
   cursor: pointer;
-  background: url(../index_img/layer.png)no-repeat 0 -95px;
+  background: url(../img/index_img/layer.png)no-repeat 0 -95px;
 }
 
 #app .login_body .login_main {
@@ -1346,7 +1346,7 @@ body {
   display: inline-block;
   width: 220px;
   height: 31px;
-  background: url(../index_img/button2.png)no-repeat right -428px;
+  background: url(../img/index_img/button2.png)no-repeat right -428px;
   padding: 0 5px 0 0;
 }
 
@@ -1360,7 +1360,7 @@ body {
   color: #fff;
   padding: 0 15px 0 20px;
   line-height: 31px;
-  background: url(../index_img/button2.png)no-repeat 0 -387px;
+  background: url(../img/index_img/button2.png)no-repeat 0 -387px;
 }
 
 #app .iphone_login .login_main .login_main_bottom,
@@ -1397,7 +1397,7 @@ body {
   margin-left: 101px;
   width: 125px;
   height: 220px;
-  background: url(../index_img/qr_guide.png)no-repeat;
+  background: url(../img/index_img/qr_guide.png)no-repeat;
   background-size: contain;
 }
 
@@ -1469,7 +1469,7 @@ body {
 
 #app .login_body .login_main_hide .u_main .u_plt {
   height: 120px;
-  background: url(../index_img/platform.png) no-repeat 13px 0;
+  background: url(../img/index_img/platform.png) no-repeat 13px 0;
 
 }
 
@@ -1483,11 +1483,11 @@ body {
   height: 31px;
   padding: 0 5px 0 0;
   cursor: pointer;
-  background: url(../index_img/button2.png) no-repeat right -428px;
+  background: url(../img/index_img/button2.png) no-repeat right -428px;
 }
 
 #app .login_body .login_main_hide .u_main .u_mgt10 .btn2 {
-  background: url(../index_img/button2.png) no-repeat right -100px;
+  background: url(../img/index_img/button2.png) no-repeat right -100px;
 }
 
 #app .login_body .login_main_hide .u_main .u_mgt10 a i {
@@ -1501,12 +1501,12 @@ body {
   text-align: center;
   cursor: pointer;
   font-style: normal;
-  background: url(../index_img/button2.png) no-repeat 0 -387px;
+  background: url(../img/index_img/button2.png) no-repeat 0 -387px;
 }
 
 #app .login_body .login_main_hide .u_main .u_mgt10 .btn2 i {
   color: #333;
-  background: url(../index_img/button2.png) no-repeat 0 -59px;
+  background: url(../img/index_img/button2.png) no-repeat 0 -59px;
 }
 
 #app .login_body .login_main_hide .u_alt {
@@ -1529,7 +1529,7 @@ body {
   width: 38px;
   height: 38px;
   margin-right: 14px;
-  background: url(../index_img/logo.png)no-repeat -150px -670px;
+  background: url(../img/index_img/logo.png)no-repeat -150px -670px;
 }
 
 #app .login_body .login_main_hide .u_alt ul li:nth-child(2) a i {
@@ -1574,7 +1574,7 @@ body {
   bottom: 0;
   width: 52px;
   height: 52px;
-  background: url(../index_img/qr_login_icon.png) no-repeat;
+  background: url(../img/index_img/qr_login_icon.png) no-repeat;
   background-size: contain;
   cursor: pointer;
 }

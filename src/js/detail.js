@@ -1,5 +1,5 @@
 require(['config'], () => {
-  require(['jquery', 'artTemplate', 'include', 'tools', 'zoom'], function($, template) {
+  require(['jquery', 'artTemplate', 'include', 'tools', 'zoom'], function ($, template) {
     class DetailPage {
       constructor() {
         this.render()
@@ -8,7 +8,7 @@ require(['config'], () => {
       /**
        * 加载数据，并渲染页面
        */
-      render() {
+      render () {
         // 获取在请求查询字符串中的参数 id
         const { id } = $.qsToObj(location.search.slice(1))
         console.log('obj:', id)
@@ -21,8 +21,9 @@ require(['config'], () => {
           success: (resData) => {
             console.log('详情：', resData)
             // 渲染模板引擎
-            const html = template('detail-template', {detail: resData.product})
+            const html = template('detail-template', { detail: resData.product })
             $('main').append(html)
+
 
             // 添加放大镜
             this.addZoom()
@@ -33,7 +34,7 @@ require(['config'], () => {
       /**
        * 添加放大镜效果
        */
-      addZoom() {
+      addZoom () {
         $('.left_box img').elevateZoom({
           gallery: 'zoom-gal',
           galleryActiveClass: 'active'
