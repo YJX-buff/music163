@@ -1,5 +1,5 @@
 /* 定义模块，用于复用页面的头部与尾部 */
-define(['jquery', 'artTemplate'], ($, template) => {
+define(['jquery', 'artTemplate', 'cookie'], ($, template) => {
   $('<header>').load('/includes/header.html', () => {
     // 为搜索框绑定事件
     $('.shop_top_center_search input').on('focus', e => {
@@ -10,7 +10,7 @@ define(['jquery', 'artTemplate'], ($, template) => {
         '/store/api/searchsuggest/get',
         resData => {
           // 利用模板引擎渲染响应数据
-          const html = template('suggest-template', {suggests: resData.data.configKey})
+          const html = template('suggest-template', { suggests: resData.data.configKey })
           $('.suggest').html(html)
         })
 
@@ -25,6 +25,11 @@ define(['jquery', 'artTemplate'], ($, template) => {
       // 提示内容隐藏
       $('.suggest').hide()
     })
+    //获取购物车商品数量
+    $.cookie.json = true
+    const total = ($.cookie('cart') || []).reduce((result, curr) => result + curr.amount, 0)
+    $('.shop_top_center_shopcart span').html(total)
+
   }).prependTo('body')
   $('<footer>').load('/includes/footer.html').appendTo('body')
 })

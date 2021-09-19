@@ -8,7 +8,7 @@
   <title>购物车</title>
   <link rel="stylesheet" href="css/shopcart.css">
   <link rel="stylesheet" href="css/base.css">
-  <script src="libs/requirejs/require.min.js" data-main="js/index"></script>
+  <script src="libs/requirejs/require.min.js" data-main="js/cart"></script>
 </head>
 
 <body>
@@ -27,28 +27,50 @@
     </div>
     <ul class="prod_list">
       <li class="first_line"></li>
-      <li>
-        <div class="check"><i></i></div>
-        <div class="cnt">
-          <div class="coverwrap"><a href=""><img src="img/object_img/109951166366330465.jpg" alt=""></a></div>
-          <div class="msg"><a href="">
-              <p>i12真无线蓝牙耳机 智能触控 双耳运动跑步 安卓苹果通用</p>
-              <p>白色</p>
-            </a></div>
-          <div class="price"><i>¥49</i></div>
-          <div class="ctrl">
-            <a href=""><i></i></a>
-            <span><input type="text" value="1"></span>
-            <a href="" class="add"><i></i></a>
-          </div>
-          <div class="acount"><i>¥49</i></div>
-          <div class="del"></div>
-        </div>
-      </li>
+
       <li class="last_line"></li>
     </ul>
+    <div class="cart-body"></div>
   </div>
 
+  <script type="text/html" id="cart-template">
+    {{each cart prod}}
+    <li>
+      <div class="check"><i></i></div>
+      <div class="cnt">
+        <div class="coverwrap">
+          <a href="">
+            <img src="{{prod.image}}" alt="">
+          </a>
+        </div>
+        <div class="msg">
+          <a href="">
+            <p>{{prod.title}}</p>
+            <p>白色</p>
+          </a>
+        </div>
+        <div class="price">
+          <i>¥{{prod.price}}</i>
+        </div>
+        <div class="ctrl">
+          <a href="">
+            <i></i>
+          </a>
+          <span>
+            <input type="text" value="{{prod.amount}}">
+          </span>
+          <a href="" class="add">
+            <i></i>
+          </a>
+        </div>
+        <div class="acount">
+          <i>¥{{prod.price * prod.amount}}</i>
+        </div>
+        <div class="del"></div>
+      </div>
+    </li>
+    {{/each}}
+  </script>
 
 </body>
 

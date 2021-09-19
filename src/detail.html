@@ -37,7 +37,7 @@
             <div id="zoom-gal">
               {{each detail.picUrls pic}}
               <a href="#" data-image="{{pic}}" data-zoom-image="{{pic}}"><img src="{{pic}}" alt=""
-                  style="width: 64px; height: 64px;"></a>
+                  style="width: 76px; height: 76px;"></a>
               {{/each}}
             </div>
           </div>
@@ -45,7 +45,7 @@
         <div class="object_main_contain_right">
           <h2>{{detail.name}}</h2>
           <p>{{detail.suggestWord}}</p>
-          <p class="price"><em>¥</em>{{detail.minPrice}}</p>
+          <p class="price"><em>¥</em>{{detail.skus[0].spePrice}}</p>
           <div class="fl">
             <span>促销: </span>
             <ul>
@@ -54,7 +54,7 @@
             </ul>
           </div>
           <div class="style">
-            <div class="st_lf">款式 :</div>
+            <div class="st_lf">{{detail.skus[0].attrs[0].attr}}</div>
             <ul class="st_rg">
               <li>
                 <b>手办盲盒</b>

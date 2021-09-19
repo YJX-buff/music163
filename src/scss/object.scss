@@ -59,6 +59,43 @@ button {
   background: transparent;
 }
 
+.shop_top .shop_top_center .shop_top_center_search .suggest {
+  position: absolute;
+  z-index: 999;
+  top: 56px;
+  width: 300px;
+  height: auto;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 4px 7px #555;
+  text-shadow: 0 1px 0 rgb(255 255 255 / 90%);
+  padding-bottom: 10px;
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest li {
+  height: 34px;
+  line-height: 34px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest li:nth-child(1) {
+  border-bottom: 1px solid #E5E5E5;
+  font-weight: 600;
+  font-size: 12px;
+  color: #000;
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest li:hover {
+  background-color: #F5F5F5;
+
+}
+
+.shop_top .shop_top_center .shop_top_center_search .suggest li:nth-child(1):hover {
+  background-color: #fff;
+}
+
 .shop_top .shop_top_center .shop_top_center_shopcart {
   float: left;
   width: 36px;
@@ -193,11 +230,11 @@ button {
   height: 1060px;
 }
 
-.object_main .object_main_contain .object_main_contain_left .left_smnav ul {
+.object_main .object_main_contain .object_main_contain_left .left_smnav #zoom-gal {
   width: 3000px;
 }
 
-.object_main .object_main_contain .object_main_contain_left .left_smnav ul li {
+.object_main .object_main_contain .object_main_contain_left .left_smnav #zoom-gal a {
   border: 2px solid #fff;
   box-sizing: border-box;
   float: left;
@@ -207,9 +244,9 @@ button {
   background: #f9f9f9;
 }
 
-.object_main .object_main_contain .object_main_contain_left .left_smnav ul li:nth-child(1) {
-  border: 2px solid #d33a31;
-}
+// .object_main .object_main_contain .object_main_contain_left .left_smnav ul li:nth-child(1) {
+//   border: 2px solid #d33a31;
+// }
 
 .object_main .object_main_contain .object_main_contain_right {
   width: 580px;
@@ -373,7 +410,7 @@ button {
 
 .object_main .object_main_contain .object_main_contain_right .num .num_op {
   float: left;
-  width: 132px;
+  width: 131px;
   height: 32px;
   border: 1px solid #e5e5e5;
   border-left: none;
