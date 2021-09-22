@@ -8,11 +8,21 @@
   <title>云音乐商城</title>
   <link rel="stylesheet" type="text/css" href="css/object.css">
   <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
   <script src="libs/requirejs/require.min.js" data-main="js/detail"></script>
 </head>
 
 <body>
-
+  <div class="m2top">
+    <div class="m-item"><span>查看<br>营业执照</span></div>
+    <div class="m-item"><span>100%<br>正品</span></div>
+    <div class="m-item"><span>七天无理由退货</span></div>
+    <div class="m-item"><i></i>
+      <span>购物车 <p class="m2top-nums"></p></span>
+    </div>
+    <div class="m-item"><i></i><span>客服</span></div>
+    <div class="m-item unshow"></div>
+  </div>
   <main></main>
 
   <script type="text/html" id="detail-template">
@@ -70,9 +80,9 @@
           <div class="num">
             <p>数量 :</p>
             <div class="num_op">
-              <a href=""><i></i></a>
-              <span><input type="text" value="1"></span>
-              <a href="" class="add"><i></i></a>
+              <a href=""><i class="minus"></i></a>
+              <span><input class="amount" type="text" value="1"></span>
+              <a href=""><i class="add"></i></a>
             </div>
           </div>
           <div class="service">
@@ -86,13 +96,16 @@
             </div>
           </div>
           <div class="btn_buy">
-            <a href="">立即购买</a>
+            <a href="javascript:;">立即购买</a>
             <a href=""><i></i>加入购物车</a>
+            <div class="flybox"></div>
           </div>
+
         </div>
       </div>
     </div>
   </script>
+
 </body>
 
 </html>

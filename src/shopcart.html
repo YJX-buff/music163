@@ -8,59 +8,105 @@
   <title>购物车</title>
   <link rel="stylesheet" href="css/shopcart.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
   <script src="libs/requirejs/require.min.js" data-main="js/cart"></script>
 </head>
 
 <body>
   <div class="cart_main">
     <div class="main_top">购物车</div>
-    <div class="cart_topnav">
-      <div class="cart_nav_check">
-        <i></i>
+    <div class="cart-body">
+      <div class="cart_topnav">
+        <label>
+          <div class="cart_nav_check">
+            <input type="checkbox" class="check_all" checked="checked">
+          </div>
+          <div class="cart_nav_all">全选</div>
+        </label>
+        <div class="cart_nav_list">商品</div>
+        <div class="cart_nav_price">金额</div>
+        <div class="cart_nav_num">数量</div>
+        <div class="cart_nav_count">小计</div>
+        <div class="cart_nav_option">操作</div>
       </div>
-      <div class="cart_nav_all">全选</div>
-      <div class="cart_nav_list">商品</div>
-      <div class="cart_nav_price">金额</div>
-      <div class="cart_nav_num">数量</div>
-      <div class="cart_nav_count">小计</div>
-      <div class="cart_nav_option">操作</div>
-    </div>
-    <ul class="prod_list">
-      <li class="first_line"></li>
+      <ul class="prod_list">
+        <li class="first_line">
+          <div class="first_all_prod">全部商品 ( <span class="first_all_prod_nums">0</span> ) </div>
+          <div class="first_fr">
+            <span class="icon"></span>
+            <span class="first_all_prod_txt">全场满<p>¥119</p>免运费</span>
+            <span class="unshow"> ( 还差¥<p class="dif" style="display: inline-block;"></p> )&nbsp;&nbsp;去凑单&nbsp;&gt;
+            </span>
+          </div>
+        </li>
 
-      <li class="last_line"></li>
-    </ul>
-    <div class="cart-body"></div>
+        <li class="last_line">
+          <label>
+            <div class="cart_nav_check">
+              <input type="checkbox" class="check_all2" checked="checked">
+            </div>
+            <div class="cart_nav_all">全选</div>
+          </label>
+          <div class="check_nums">
+            <p>已选择 <span class="check_nums_red_show">0</span> 件商品</p>
+          </div>
+          <div class="jiesuan">
+            结算
+          </div>
+          <div class="del_checked_prod">
+            删除选中商品
+          </div>
+          <div class="all_price">
+            <span class="unshow">&nbsp;差<p class="dif" style="display: inline-block;"></p>元免运费</span>
+            <span class="show">&nbsp;已享受免运费</span>
+            <span>&nbsp;|&nbsp;</span>
+            <span>合计&nbsp;:&nbsp;&nbsp;</span>
+            <span class="total"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="empty" style="display: none;">
+      <i class="icon"></i>
+      <span>购物车还是空的 ，<a href="/">去逛逛 ></a></span>
+    </div>
   </div>
 
   <script type="text/html" id="cart-template">
     {{each cart prod}}
-    <li>
-      <div class="check"><i></i></div>
+    <li class="shop_lines" data-id="{{prod.id}}">
+      <div class="check">
+        <input type="checkbox" class="check_prod" {{prod.checked ? 'checked="checked"':''}}>
+      </div>
       <div class="cnt">
         <div class="coverwrap">
-          <a href="">
+          <a href="/detail.html?id={{prod.id}}">
             <img src="{{prod.image}}" alt="">
           </a>
         </div>
         <div class="msg">
-          <a href="">
+          <a href="/detail.html?id={{prod.id}}">
             <p>{{prod.title}}</p>
-            <p>白色</p>
           </a>
+          <span>{{prod.style}}</span>
         </div>
         <div class="price">
           <i>¥{{prod.price}}</i>
         </div>
         <div class="ctrl">
+
           <a href="">
-            <i></i>
+            {{if prod.amount>1}}
+            <i class="minus" style="opacity: 1;"></i>
+            {{else}}
+            <i class="minus" style="opacity: 0.3;"></i>
+            {{/if}}
           </a>
           <span>
-            <input type="text" value="{{prod.amount}}">
+            <input class="amount" type="text" value="{{prod.amount}}">
           </span>
-          <a href="" class="add">
-            <i></i>
+          <a href="">
+            <i class="add"></i>
           </a>
         </div>
         <div class="acount">

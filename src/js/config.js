@@ -7,6 +7,7 @@ require.config({
     cookie: 'jquery-plugins/jquery.cookie',
     zoom: 'jquery-plugins/jquery.elevatezoom.min',
     include: '/js/include',
+    m2top: '/js/m2top',
     tools: '/js/tools'
   },
   shim: {

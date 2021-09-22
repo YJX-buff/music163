@@ -1,5 +1,5 @@
 require(['config'], () => {
-  require(['jquery', 'swiper', 'artTemplate', 'include'], ($, Swiper, template) => {
+  require(['jquery', 'swiper', 'artTemplate', 'include', 'm2top'], ($, Swiper, template) => {
     class IndexPage {
       constructor() {
         this.initSwiper()
@@ -10,7 +10,7 @@ require(['config'], () => {
       /**
        * 初始化创建 Swiper 对象实例，实现滑块轮播效果
        */
-      initSwiper() {
+      initSwiper () {
         $.ajax({
           url: '/store/api/product/ipbanner', // 请求资源的地址
           method: 'GET', // 请求方法
@@ -22,18 +22,18 @@ require(['config'], () => {
             // 获取返回数据中轮播图相关的数组
             const { banners } = resData
             // 渲染模板
-            const html = template('slide-template', {slides: banners})
+            const html = template('slide-template', { slides: banners })
             $('.swiper-wrapper').html(html)
             // 创建 Swiper 对象实例，实现轮播效果
             new Swiper('.swiper-container', {
               loop: true, // 循环模式选项
-              
+
               // 如果需要分页器
               pagination: {
                 el: '.swiper-pagination',
                 clickable: true
               },
-              
+
               // 如果需要前进后退按钮
               navigation: {
                 nextEl: '.swiper-button-next',
@@ -53,16 +53,16 @@ require(['config'], () => {
       /**
        * 加载编辑推荐商品
        */
-      loadHotProducts() {
+      loadHotProducts () {
         $.ajax({
           url: '/store/api/hotproduct_v2/gets?limit=60&offset=0',
           dataType: 'json',
-          success(resData) {
+          success (resData) {
             // console.log('成功：', resData)
             // 构建在模板中需要渲染到的数据
             const products = resData.data.hotProduct.map(prod => prod.products)
             // 渲染
-            const html = template('hot-template', {products})
+            const html = template('hot-template', { products })
             $('.shop_main_all > ul:first').html(html)
           }
         })
@@ -71,13 +71,13 @@ require(['config'], () => {
       /**
        * 加载所有商品
        */
-      loadAllProducts() {
+      loadAllProducts () {
         $.ajax({
           url: '/store/api/allProduct/gets?limit=60&offset=0',
           dataType: 'json',
-          success(resData) {
+          success (resData) {
             // console.log('所有：', resData.data.allProduct)
-            const html = template('hot-template', {products: resData.data.allProduct})
+            const html = template('hot-template', { products: resData.data.allProduct })
             $('.shop_main_all > ul:last').html(html)
           }
         })
