@@ -1,4 +1,4 @@
-define(['jquery'], ($) => {
+define(['jquery', 'cookie'], ($) => {
   $('<aside>').load('/includes/m2top.html', () => {
 
     window.onscroll = function () {
@@ -25,6 +25,13 @@ define(['jquery'], ($) => {
         }
       }, 10)
     })
+
+    $.cookie.json = true
+    const total = ($.cookie('cart') || []).reduce((result, curr) => result + curr.amount, 0)
+    $('.m2top-nums').html(total)
+    // console.log(total)
+    // console.log($('.m2top-nums'))
+
   }).prependTo('body')
 })
 

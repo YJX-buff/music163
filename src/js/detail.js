@@ -36,6 +36,13 @@ require(['config'], () => {
             this.addZoom()
           }
         })
+
+
+
+        $.cookie.json = true
+        const total = ($.cookie('cart') || []).reduce((result, curr) => result + curr.amount, 0)
+        $('.shop_top_center_shopcart span').html(total)
+        $('.m2top-nums').html(total)
       }
 
       /**
@@ -95,7 +102,11 @@ require(['config'], () => {
 
         })
 
-
+        $('main').on('click', '.style li', e => {
+          console.log($(e.target))
+          $(e.target).css({ "border-color": "#d33a31" })
+          // $(e.target).prop
+        })
 
         $('main').on('click', '.minus, .add', function (e) {
           e.preventDefault()
@@ -136,7 +147,7 @@ require(['config'], () => {
             // $(".m2top").css({ "position": "fixed", "top": newtop })
             $(".unshow").css({ "display": "block" })
           } else {
-            console.log("nnnmmm");
+            // console.log("nnnmmm");
             // $(".m2top").css({ "position": "absolute", "top": "674px" })
             $(".unshow").css({ "display": "none" })
           }
@@ -151,6 +162,7 @@ require(['config'], () => {
           }, 10)
 
         })
+
       }
     }
 

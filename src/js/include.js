@@ -29,9 +29,15 @@ define(['jquery', 'artTemplate', 'cookie'], ($, template) => {
     $.cookie.json = true
     const total = ($.cookie('cart') || []).reduce((result, curr) => result + curr.amount, 0)
     $('.shop_top_center_shopcart span').html(total)
-    $('.m2top-nums').html(total)
+    // $('.m2top-nums').html(total)
+    // console.log(total)
+    // console.log($('.m2top-nums'))
 
 
+    $('.login').on('click', e => {
+      // console.log('in')
+      $('.iphone_login').css({ "display": "block" })
+    })
   }).prependTo('body')
   $('<footer>').load('/includes/footer.html').appendTo('body')
 })

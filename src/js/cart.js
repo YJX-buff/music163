@@ -170,9 +170,6 @@ require(['config'], () => {
           const id = $(dom).parents('.shop_lines').data('id')
           this.cart = this.cart.filter(item => item.id !== id)
         })
-        // console.log(this.cart.length)
-
-        // $('.check_prod').prop('checked', false)
         this.render()
       }
 
@@ -194,6 +191,31 @@ require(['config'], () => {
 
       }
     }
+    window.onscroll = function () {
+      const top = document.documentElement.scrollTop
+      // const cle = document.documentElement.clientHeight
+      // const m2h = parseInt($(".m2top").css("height"))
+      // const newtop = (cle / 2 - m2h / 2)
+      if (top >= 200) {
+        // console.log(newtop)
+        // $(".m2top").css({ "position": "fixed", "top": newtop })
+        $(".unshowdiv").css({ "display": "block" })
+      } else {
+        console.log("nnnmmm");
+        // $(".m2top").css({ "position": "absolute", "top": "674px" })
+        $(".unshowdiv").css({ "display": "none" })
+      }
+    }
+    $(".unshowdiv").on("click", () => {
+      const step = 50
+      const timer = setInterval(() => {
+        document.documentElement.scrollTop -= step
+        if (document.documentElement.scrollTop === 0) {
+          clearInterval(timer)
+        }
+      }, 10)
+
+    })
     new CartPage()
   })
 })

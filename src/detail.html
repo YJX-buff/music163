@@ -17,9 +17,9 @@
     <div class="m-item"><span>查看<br>营业执照</span></div>
     <div class="m-item"><span>100%<br>正品</span></div>
     <div class="m-item"><span>七天无理由退货</span></div>
-    <div class="m-item"><i></i>
-      <span>购物车 <p class="m2top-nums"></p></span>
-    </div>
+    <div class="m-item"><a href="/shopcart.html"><i></i>
+        <span>购物车 <p class="m2top-nums"></p></span>
+      </a></div>
     <div class="m-item"><i></i><span>客服</span></div>
     <div class="m-item unshow"></div>
   </div>
@@ -28,7 +28,7 @@
   <script type="text/html" id="detail-template">
     <div class="object_main">
       <div class="object_main_top">
-        <span><a href="">首页</a></span>
+        <span><a href="/">首页</a></span>
         <span>
           <i></i>{{detail.name}}
         </span>
@@ -60,23 +60,66 @@
             <span>促销: </span>
             <ul>
               <li><span>首发福利</span><span>70元&nbsp;&nbsp;70元优惠券,</span><span>无门槛</span><span><a
-                    href="">领券</a></span><span><a href="">全部优惠券(2) <i></i></a></span></li>
+                    href="javascript:;">领券</a></span><span><a href="">全部优惠券(2) <i></i></a></span></li>
             </ul>
           </div>
           <div class="style">
             <div class="st_lf">{{detail.skus[0].attrs[0].attr}}</div>
             <ul class="st_rg">
               <li>
-                <b>手办盲盒</b>
+                {{detail.skus[0].attrs[0].attrValue}}
               </li>
+              {{if detail.skus[1]}}
+              {{if (detail.skus[1].attrs[0].attrValue!==detail.skus[0].attrs[0].attrValue)}}
               <li>
-                <b>6只一套装</b>
+                {{detail.skus[1].attrs[0].attrValue}}
               </li>
+              {{/if}}
+              {{/if}}
+              {{if detail.skus[2]}}
+              {{if (detail.skus[2].attrs[0].attrValue!==detail.skus[1].attrs[0].attrValue)}}
               <li>
-                <b>12只一盒装</b>
+                {{detail.skus[2].attrs[0].attrValue}}
               </li>
+              {{/if}}
+              {{/if}}
+              {{if detail.skus[3]}}
+              {{if (detail.skus[3].attrs[0].attrValue!==detail.skus[2].attrs[0].attrValue)}}
+              <li>
+                {{detail.skus[3].attrs[0].attrValue}}
+              </li>
+              {{/if}}
+              {{/if}}
             </ul>
           </div>
+          {{if detail.skus[0].attrs[1]}}
+          <div class="style">
+            <div class="st_lf">{{detail.skus[0].attrs[1].attr}}</div>
+            <ul class="st_rg">
+              <li>
+                {{detail.skus[0].attrs[1].attrValue}}
+              </li>
+              {{if detail.skus[1]}}
+              {{if detail.skus[1].attrs[1]}}
+              {{if detail.skus[1].attrs[1].attrValue!== detail.skus[0].attrs[1].attrValue}}
+              <li>
+                {{detail.skus[1].attrs[1].attrValue}}
+              </li>
+              {{/if}}
+              {{/if}}
+              {{/if}}
+              {{if detail.skus[2]}}
+              {{if detail.skus[2].attrs[1]}}
+              {{if detail.skus[2].attrs[1].attrValue!== detail.skus[1].attrs[1].attrValue}}
+              <li>
+                {{detail.skus[2].attrs[1].attrValue}}
+              </li>
+              {{/if}}
+              {{/if}}
+              {{/if}}
+            </ul>
+          </div>
+          {{/if}}
           <div class="num">
             <p>数量 :</p>
             <div class="num_op">
